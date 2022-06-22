@@ -10,6 +10,10 @@ body {
     overflow: hidden;
 }
 
+* {
+    font-family: 'RobotoRegular', sans-serif;
+}
+
 h1,h2,h3,p,a {
     color: #000000cc;
 }
@@ -69,3 +73,4 @@ hr {
     border: 0;
     border-top: solid 1px #0000001d;
 }
+

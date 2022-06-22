@@ -1,0 +1,81 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    & li {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+.skill {
+    &-box {
+        display: inline-block;
+        position: relative;
+        margin: 5px;
+        padding: 10px 15px;
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #1abc9c;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        &-well {
+            display: inline-block;
+            background-color: #16a085;
+            padding: 0 5px;
+            margin: 0 0 0 10px;
+            border-radius: 3px;
+            text-align: center;
+            font-size: small;
+        }
+    }
+
+    &-favorite {
+        position: absolute;
+        left: -20px;
+        top: calc(50% - 10px);
+        color: gold;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .list {
+
+        & li {
+            width: calc(50% - 10px);
+
+            &:nth-child(even) {
+                text-align: left;
+            }
+
+            &:nth-child(odd) {
+                text-align: right;
+            }
+
+            &:nth-child(even) .skill-box .fa.skill-favorite {
+                left: initial;
+                right: -20px;
+            }
+        }
+    }
+
+    .skill {
+        &-box {
+            width: fit-content;
+        }
+
+        // &-favorite:nth-child(even) {
+        //     left: initial;
+        //     right: -20px;
+        // }
+    }
+}

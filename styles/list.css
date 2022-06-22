@@ -1,0 +1,65 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list li {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.skill-box {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #1abc9c;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.skill-box-well {
+  display: inline-block;
+  background-color: #16a085;
+  padding: 0 5px;
+  margin: 0 0 0 10px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: small;
+}
+.skill-favorite {
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 10px);
+  color: gold;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 500px) {
+  .list li {
+    width: calc(50% - 10px);
+  }
+  .list li:nth-child(even) {
+    text-align: left;
+  }
+  .list li:nth-child(odd) {
+    text-align: right;
+  }
+  .list li:nth-child(even) .skill-box .fa.skill-favorite {
+    left: initial;
+    right: -20px;
+  }
+
+  .skill-box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}/*# sourceMappingURL=list.css.map */
