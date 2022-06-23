@@ -2,7 +2,9 @@
   display: inline-block;
   margin: 10px;
   width: 100%;
+  height: 275px;
   max-width: 240px;
+  vertical-align: top;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1019607843);
   border-radius: 11px;
 }
