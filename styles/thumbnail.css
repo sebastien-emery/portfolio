@@ -8,6 +8,9 @@
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1019607843);
   border-radius: 11px;
 }
+.thumbnail:hover {
+  box-shadow: 0 5px 13px -7px #000, 5px 5px 15px 5px transparent;
+}
 .thumbnail-cover {
   width: 100%;
   height: 75px;
