@@ -22,6 +22,7 @@
     &-content {
         position: relative;
         min-height: 120px;
+        height: 200px;
         padding: 20px;
         text-align: left;
 
@@ -53,7 +54,7 @@
         padding: 5px 10px;
         position: absolute;
         right: 10px;
-        bottom: 10px;
+        bottom: 50px;
         background-color: #3498db;
         border-radius: 20px;
         font-size: 0.8rem;
@@ -68,6 +69,6 @@
 
 @media screen and (min-width: 500px) {
     .thumbnail {
-
+        // nothing
     }
 }
