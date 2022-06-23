@@ -74,3 +74,8 @@ hr {
     border-top: solid 1px #0000001d;
 }
 
+@media screen and (min-width: 500px) {
+    .or {
+        display: inline;
+    }
+}

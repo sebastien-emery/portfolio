@@ -7,6 +7,6 @@ const part3 = String.fromCharCode(part2);
 const part4 = "gmail.com"
 const part5 = part1 + part3 + part4;
 
-console.log(part5);
+// console.log(part5);
 
 mail.href = "mailto:" + part5;
